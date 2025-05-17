@@ -1,0 +1,5 @@
+customHeaders:
+  - pattern: '**/*'            # apply to every file
+    headers:
+      - key: 'X-Amplify-Key'
+        value: 'YOUR_VALUE_HERE'

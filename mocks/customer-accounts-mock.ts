@@ -1,0 +1,35 @@
+export const customerAccounts = {
+  message: "Accounts successfully retrieved",
+  data: [
+    {
+      account_number: "CxXbc1Pk10",
+      account_group: 1,
+      value:"default",
+      is_with_fed: null,
+      is_with_nra: null,
+      is_with_state: null,
+      unmodified_positions: null,
+      modified_positions: null,
+    },
+    {
+      account_number: "pLozi1876X",
+      account_group: 1,
+      value:"secondary",
+      is_with_fed: null,
+      is_with_nra: null,
+      is_with_state: null,
+      unmodified_positions: null,
+      modified_positions: null,
+    },
+    {
+      account_number: "1phxjakI91",
+      account_group: 1,
+      value:"optional",
+      is_with_fed: null,
+      is_with_nra: null,
+      is_with_state: null,
+      unmodified_positions: null,
+      modified_positions: null,
+    },
+  ],
+};

@@ -1,0 +1,80 @@
+import { quickAction } from "@/types/quick-actions";
+import {
+  Download,
+  Rocket,
+  DollarSign,
+  Fingerprint,
+  Map,
+  Settings,
+} from "lucide-react";
+
+export const quickActions: quickAction[][] = [
+  [
+    {
+      title: "Download account history",
+      icon: Download,
+      bgIcon: "text-[#7E7E7E]",
+      bgColor: "bg-[#7E7E7E33]",
+      textColor: "text-gray-800",
+      href: "#",
+      openModal: false,
+      modalType: null,
+    },
+    {
+      title: "Send instant transfer",
+      icon: Rocket,
+      bgIcon: "text-[#92C8C6]",
+      bgColor: "bg-[#92C8C64D]",
+      textColor: "text-gray-800",
+      href: "/transactions",
+      openModal: false,
+      modalType: null,
+    },
+  ],
+  [
+    {
+      title: "Get deposit instructions",
+      icon: DollarSign,
+      bgIcon: "text-[#A8C5DA]",
+      bgColor: "bg-[#A8C5DA66]",
+      textColor: "text-gray-800",
+      href: "#",
+      openModal: true,
+      modalType: "Deposit",
+    },
+    {
+      title: "Authorize transfer",
+      icon: Fingerprint,
+      bgIcon: "text-[#286483]",
+      bgColor: "bg-[#2864834D]",
+       bgIconApproved: "text-[#FAC000]",
+      bgColorApproved: "bg-[#FAC0004D]",
+      textColor: "text-gray-800",
+      href: "#",
+      openModal: true,
+      modalType: "Approved",
+    },
+  ],
+  [
+    {
+      title: "View bank map",
+      icon: Map,
+      bgIcon: "text-[#92C8C6]",
+      bgColor: "bg-[#92C8C64D]",
+      textColor: "text-gray-800",
+      href: "/deposit",
+      openModal: false,
+      modalType: null,
+    },
+    {
+      title: "Authorize account integrations",
+      icon: Settings,
+      bgIcon: "text-[#7E7E7E]",
+      bgColor: "bg-[#7E7E7E33]",
+      textColor: "text-gray-800",
+      href: "/dev",
+      openModal: false,
+      modalType: null,
+    },
+  ],
+];
